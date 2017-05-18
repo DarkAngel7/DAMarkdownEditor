@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9zk-od-UPh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0Dc-rz-e1j">
+            <objects>
+                <navigationController id="9zk-od-UPh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6UP-oG-j4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KQz-kj-fAd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeR-aa-OOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="37"/>
+        </scene>
+        <!--文本编辑-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="文本编辑" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="EditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A test title" placeholder="Please input  a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBr-Qc-ChE">
+                                <rect key="frame" x="10" y="64" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g0G-Bt-8E8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GjC-cc-4CI">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text"># Hello 
+Hello `iOS`. 
+
+Here are some source codes.
+
+```javascript
+var a = 1;
+var b = ++a;
+```
+![](http://cdn.cocimg.com/bbs/images/face/none.gif)
+
+## Haha
+ [Here is a link](http://blog.darkangel7.com)  # Wow
+Thank you for reading.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBr-Qc-ChE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2rf-zS-dvZ"/>
+                            <constraint firstItem="GjC-cc-4CI" firstAttribute="top" secondItem="bBr-Qc-ChE" secondAttribute="bottom" id="Gr2-x1-JzH"/>
+                            <constraint firstItem="GjC-cc-4CI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H7x-rt-7st"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GjC-cc-4CI" secondAttribute="bottom" id="KvV-el-xUE"/>
+                            <constraint firstAttribute="trailing" secondItem="bBr-Qc-ChE" secondAttribute="trailing" constant="10" id="T8q-HD-knT"/>
+                            <constraint firstItem="bBr-Qc-ChE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Vwh-Yt-1Px"/>
+                            <constraint firstAttribute="trailing" secondItem="GjC-cc-4CI" secondAttribute="trailing" id="jbH-6C-o45"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="文本编辑" id="Ab2-TJ-pcg">
+                        <rightBarButtonItems>
+                            <barButtonItem title="保存" id="kv2-jG-A9j">
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" id="T5j-Z7-kHI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="预览" id="1mz-DI-WRB">
+                                <connections>
+                                    <action selector="preview:" destination="BYZ-38-t0r" id="r2t-KA-BKP"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputBar" destination="8pw-Dd-fqz" id="cc6-7O-mFX"/>
+                        <outlet property="jsContext" destination="kpk-7k-eGg" id="WbC-Cs-WiR"/>
+                        <outlet property="textView" destination="GjC-cc-4CI" id="Tc7-YM-rzD"/>
+                        <outlet property="titleTextField" destination="bBr-Qc-ChE" id="1jZ-gt-fQp"/>
+                        <segue destination="ZEd-yX-Wb4" kind="show" identifier="ShowPreviewSegue" id="aco-ta-GqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="kpk-7k-eGg" customClass="JSContext"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8pw-Dd-fqz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="#" width="40" id="UoA-ji-ty2">
+                            <connections>
+                                <action selector="inputBarItemClicked:" destination="BYZ-38-t0r" id="SjF-EH-O5L"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="*" width="40" id="zsn-yF-1VE">
+                            <connections>
+                                <action selector="inputBarItemClicked:" destination="BYZ-38-t0r" id="tDj-IE-Dln"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="-" width="40" id="gSk-cR-Z7f">
+                            <connections>
+                                <action selector="inputBarItemClicked:" destination="BYZ-38-t0r" id="9Qd-HT-h68"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="link" width="40" id="O2K-5k-emj">
+                            <connections>
+                                <action selector="inputBarItemClicked:" destination="BYZ-38-t0r" id="lB3-Rd-cad"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="img" width="40" id="6f5-f2-fjz">
+                            <connections>
+                                <action selector="inputBarItemClicked:" destination="BYZ-38-t0r" id="HW2-nk-l5b"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+        </scene>
+        <!--预览-->
+        <scene sceneID="xOZ-db-EO0">
+            <objects>
+                <viewController title="预览" automaticallyAdjustsScrollViewInsets="NO" id="ZEd-yX-Wb4" customClass="PreviewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qk6-W5-vPH"/>
+                        <viewControllerLayoutGuide type="bottom" id="fq6-yN-cMB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OrI-eM-UTU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIS-3i-hNX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CIS-3i-hNX" firstAttribute="leading" secondItem="OrI-eM-UTU" secondAttribute="leading" id="3mb-UW-Efn"/>
+                            <constraint firstItem="CIS-3i-hNX" firstAttribute="top" secondItem="qk6-W5-vPH" secondAttribute="bottom" id="9Xd-xi-hQg"/>
+                            <constraint firstItem="fq6-yN-cMB" firstAttribute="top" secondItem="CIS-3i-hNX" secondAttribute="bottom" id="UkO-Cw-zld"/>
+                            <constraint firstAttribute="trailing" secondItem="CIS-3i-hNX" secondAttribute="trailing" id="e3g-Jd-4SJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="CIS-3i-hNX" id="4Td-iK-h7z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrE-ix-IVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="36"/>
+        </scene>
+    </scenes>
+</document>

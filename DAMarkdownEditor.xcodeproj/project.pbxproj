@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F206D4C61ECD8D8D009D35CC /* showdown.js in Resources */ = {isa = PBXBuildFile; fileRef = F206D4C51ECD8D8D009D35CC /* showdown.js */; };
+		F26C534E1ECAE03E008FD4F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C534D1ECAE03E008FD4F7 /* main.m */; };
+		F26C53511ECAE03E008FD4F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C53501ECAE03E008FD4F7 /* AppDelegate.m */; };
+		F26C53541ECAE03E008FD4F7 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C53531ECAE03E008FD4F7 /* EditViewController.m */; };
+		F26C53571ECAE03E008FD4F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26C53551ECAE03E008FD4F7 /* Main.storyboard */; };
+		F26C53591ECAE03E008FD4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26C53581ECAE03E008FD4F7 /* Assets.xcassets */; };
+		F26C535C1ECAE03E008FD4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26C535A1ECAE03E008FD4F7 /* LaunchScreen.storyboard */; };
+		F26C53671ECAE03E008FD4F7 /* DAMarkdownEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C53661ECAE03E008FD4F7 /* DAMarkdownEditorTests.m */; };
+		F26C53721ECAE03E008FD4F7 /* DAMarkdownEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F26C53711ECAE03E008FD4F7 /* DAMarkdownEditorUITests.m */; };
+		F27D070E1ECAF703002D8E64 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D070D1ECAF703002D8E64 /* PreviewViewController.m */; };
+		F2CA39321ECBEBEB00708833 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = F2CA39311ECBEBEB00708833 /* markdown.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F26C53631ECAE03E008FD4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26C53411ECAE03D008FD4F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26C53481ECAE03E008FD4F7;
+			remoteInfo = DAMarkdownEditor;
+		};
+		F26C536E1ECAE03E008FD4F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F26C53411ECAE03D008FD4F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F26C53481ECAE03E008FD4F7;
+			remoteInfo = DAMarkdownEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F206D4C51ECD8D8D009D35CC /* showdown.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = showdown.js; sourceTree = "<group>"; };
+		F26C53491ECAE03E008FD4F7 /* DAMarkdownEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAMarkdownEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26C534D1ECAE03E008FD4F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F26C534F1ECAE03E008FD4F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F26C53501ECAE03E008FD4F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F26C53521ECAE03E008FD4F7 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		F26C53531ECAE03E008FD4F7 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		F26C53561ECAE03E008FD4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26C53581ECAE03E008FD4F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26C535B1ECAE03E008FD4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26C535D1ECAE03E008FD4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26C53621ECAE03E008FD4F7 /* DAMarkdownEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAMarkdownEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26C53661ECAE03E008FD4F7 /* DAMarkdownEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAMarkdownEditorTests.m; sourceTree = "<group>"; };
+		F26C53681ECAE03E008FD4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26C536D1ECAE03E008FD4F7 /* DAMarkdownEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAMarkdownEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26C53711ECAE03E008FD4F7 /* DAMarkdownEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAMarkdownEditorUITests.m; sourceTree = "<group>"; };
+		F26C53731ECAE03E008FD4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27D070C1ECAF703002D8E64 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		F27D070D1ECAF703002D8E64 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		F2CA39311ECBEBEB00708833 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26C53461ECAE03E008FD4F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C535F1ECAE03E008FD4F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C536A1ECAE03E008FD4F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F26C53401ECAE03D008FD4F7 = {
+			isa = PBXGroup;
+			children = (
+				F26C534B1ECAE03E008FD4F7 /* DAMarkdownEditor */,
+				F26C53651ECAE03E008FD4F7 /* DAMarkdownEditorTests */,
+				F26C53701ECAE03E008FD4F7 /* DAMarkdownEditorUITests */,
+				F26C534A1ECAE03E008FD4F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26C534A1ECAE03E008FD4F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26C53491ECAE03E008FD4F7 /* DAMarkdownEditor.app */,
+				F26C53621ECAE03E008FD4F7 /* DAMarkdownEditorTests.xctest */,
+				F26C536D1ECAE03E008FD4F7 /* DAMarkdownEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26C534B1ECAE03E008FD4F7 /* DAMarkdownEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F26C534F1ECAE03E008FD4F7 /* AppDelegate.h */,
+				F26C53501ECAE03E008FD4F7 /* AppDelegate.m */,
+				F26C53521ECAE03E008FD4F7 /* EditViewController.h */,
+				F26C53531ECAE03E008FD4F7 /* EditViewController.m */,
+				F27D070C1ECAF703002D8E64 /* PreviewViewController.h */,
+				F27D070D1ECAF703002D8E64 /* PreviewViewController.m */,
+				F26C53551ECAE03E008FD4F7 /* Main.storyboard */,
+				F26C53581ECAE03E008FD4F7 /* Assets.xcassets */,
+				F26C535A1ECAE03E008FD4F7 /* LaunchScreen.storyboard */,
+				F26C535D1ECAE03E008FD4F7 /* Info.plist */,
+				F2CA39311ECBEBEB00708833 /* markdown.css */,
+				F206D4C51ECD8D8D009D35CC /* showdown.js */,
+				F26C534C1ECAE03E008FD4F7 /* Supporting Files */,
+			);
+			path = DAMarkdownEditor;
+			sourceTree = "<group>";
+		};
+		F26C534C1ECAE03E008FD4F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F26C534D1ECAE03E008FD4F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F26C53651ECAE03E008FD4F7 /* DAMarkdownEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F26C53661ECAE03E008FD4F7 /* DAMarkdownEditorTests.m */,
+				F26C53681ECAE03E008FD4F7 /* Info.plist */,
+			);
+			path = DAMarkdownEditorTests;
+			sourceTree = "<group>";
+		};
+		F26C53701ECAE03E008FD4F7 /* DAMarkdownEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F26C53711ECAE03E008FD4F7 /* DAMarkdownEditorUITests.m */,
+				F26C53731ECAE03E008FD4F7 /* Info.plist */,
+			);
+			path = DAMarkdownEditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26C53481ECAE03E008FD4F7 /* DAMarkdownEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26C53761ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditor" */;
+			buildPhases = (
+				F26C53451ECAE03E008FD4F7 /* Sources */,
+				F26C53461ECAE03E008FD4F7 /* Frameworks */,
+				F26C53471ECAE03E008FD4F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DAMarkdownEditor;
+			productName = DAMarkdownEditor;
+			productReference = F26C53491ECAE03E008FD4F7 /* DAMarkdownEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F26C53611ECAE03E008FD4F7 /* DAMarkdownEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26C53791ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditorTests" */;
+			buildPhases = (
+				F26C535E1ECAE03E008FD4F7 /* Sources */,
+				F26C535F1ECAE03E008FD4F7 /* Frameworks */,
+				F26C53601ECAE03E008FD4F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26C53641ECAE03E008FD4F7 /* PBXTargetDependency */,
+			);
+			name = DAMarkdownEditorTests;
+			productName = DAMarkdownEditorTests;
+			productReference = F26C53621ECAE03E008FD4F7 /* DAMarkdownEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F26C536C1ECAE03E008FD4F7 /* DAMarkdownEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26C537C1ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditorUITests" */;
+			buildPhases = (
+				F26C53691ECAE03E008FD4F7 /* Sources */,
+				F26C536A1ECAE03E008FD4F7 /* Frameworks */,
+				F26C536B1ECAE03E008FD4F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F26C536F1ECAE03E008FD4F7 /* PBXTargetDependency */,
+			);
+			name = DAMarkdownEditorUITests;
+			productName = DAMarkdownEditorUITests;
+			productReference = F26C536D1ECAE03E008FD4F7 /* DAMarkdownEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26C53411ECAE03D008FD4F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "暗の天使";
+				TargetAttributes = {
+					F26C53481ECAE03E008FD4F7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GM8DN4C6AS;
+						ProvisioningStyle = Automatic;
+					};
+					F26C53611ECAE03E008FD4F7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GM8DN4C6AS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F26C53481ECAE03E008FD4F7;
+					};
+					F26C536C1ECAE03E008FD4F7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GM8DN4C6AS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F26C53481ECAE03E008FD4F7;
+					};
+				};
+			};
+			buildConfigurationList = F26C53441ECAE03D008FD4F7 /* Build configuration list for PBXProject "DAMarkdownEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26C53401ECAE03D008FD4F7;
+			productRefGroup = F26C534A1ECAE03E008FD4F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26C53481ECAE03E008FD4F7 /* DAMarkdownEditor */,
+				F26C53611ECAE03E008FD4F7 /* DAMarkdownEditorTests */,
+				F26C536C1ECAE03E008FD4F7 /* DAMarkdownEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26C53471ECAE03E008FD4F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C535C1ECAE03E008FD4F7 /* LaunchScreen.storyboard in Resources */,
+				F26C53591ECAE03E008FD4F7 /* Assets.xcassets in Resources */,
+				F206D4C61ECD8D8D009D35CC /* showdown.js in Resources */,
+				F2CA39321ECBEBEB00708833 /* markdown.css in Resources */,
+				F26C53571ECAE03E008FD4F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C53601ECAE03E008FD4F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C536B1ECAE03E008FD4F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26C53451ECAE03E008FD4F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C53541ECAE03E008FD4F7 /* EditViewController.m in Sources */,
+				F26C53511ECAE03E008FD4F7 /* AppDelegate.m in Sources */,
+				F26C534E1ECAE03E008FD4F7 /* main.m in Sources */,
+				F27D070E1ECAF703002D8E64 /* PreviewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C535E1ECAE03E008FD4F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C53671ECAE03E008FD4F7 /* DAMarkdownEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F26C53691ECAE03E008FD4F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C53721ECAE03E008FD4F7 /* DAMarkdownEditorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F26C53641ECAE03E008FD4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26C53481ECAE03E008FD4F7 /* DAMarkdownEditor */;
+			targetProxy = F26C53631ECAE03E008FD4F7 /* PBXContainerItemProxy */;
+		};
+		F26C536F1ECAE03E008FD4F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F26C53481ECAE03E008FD4F7 /* DAMarkdownEditor */;
+			targetProxy = F26C536E1ECAE03E008FD4F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F26C53551ECAE03E008FD4F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26C53561ECAE03E008FD4F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26C535A1ECAE03E008FD4F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26C535B1ECAE03E008FD4F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26C53741ECAE03E008FD4F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F26C53751ECAE03E008FD4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26C53771ECAE03E008FD4F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F26C53781ECAE03E008FD4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F26C537A1ECAE03E008FD4F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAMarkdownEditor.app/DAMarkdownEditor";
+			};
+			name = Debug;
+		};
+		F26C537B1ECAE03E008FD4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAMarkdownEditor.app/DAMarkdownEditor";
+			};
+			name = Release;
+		};
+		F26C537D1ECAE03E008FD4F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DAMarkdownEditor;
+			};
+			name = Debug;
+		};
+		F26C537E1ECAE03E008FD4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				INFOPLIST_FILE = DAMarkdownEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.DAMarkdownEditorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DAMarkdownEditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26C53441ECAE03D008FD4F7 /* Build configuration list for PBXProject "DAMarkdownEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26C53741ECAE03E008FD4F7 /* Debug */,
+				F26C53751ECAE03E008FD4F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26C53761ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26C53771ECAE03E008FD4F7 /* Debug */,
+				F26C53781ECAE03E008FD4F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26C53791ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26C537A1ECAE03E008FD4F7 /* Debug */,
+				F26C537B1ECAE03E008FD4F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26C537C1ECAE03E008FD4F7 /* Build configuration list for PBXNativeTarget "DAMarkdownEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26C537D1ECAE03E008FD4F7 /* Debug */,
+				F26C537E1ECAE03E008FD4F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F26C53411ECAE03D008FD4F7 /* Project object */;
+}
