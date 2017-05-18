@@ -2,6 +2,7 @@
 A lightweight markdown editor. 
 
 
+
 # 前言
 
 相信不少小伙伴看过笔者前面发的《**iOS中UIWebView与WKWebView、JavaScript与OC交互、Cookie管理看我就够**》系列了吧，文章中笔者介绍过很多关于Native与JS交互的使用。今天呢，笔者来用最快速度撸个最简单的`Markdown`编辑器。
@@ -28,7 +29,7 @@ A lightweight markdown editor.
 笔者的方案如下：
 
 - 页面结构：一个`UIViewController`上面放一个`UITextView`，顶部`NavigationBar`上面放个**预览**按钮和**保存**按钮。点击预览，查看编辑好的预览页；点击保存，保存当前文章到沙盒目录（真的业务需求的话可能是发送）。
-- `UITextView`的`markdown`纯文本转`html`字符串，[通过成熟的`js`来实现](https://cdn.rawgit.com/showdownjs/showdown/1.6.3/dist/showdown.min.js)，至于交互，使用`JavaScriptCore`（不重复造轮子，就不自己写正则处理了）。
+- `UITextView`的`markdown`纯文本转`html`字符串，[通过成熟的`js`来实现](https://github.com/showdownjs/showdown)，至于交互，使用`JavaScriptCore`（不重复造轮子，就不自己写正则处理了）。
 - 预览页直接用`WebView`加载`html`字符串即可。
 
 # 实现
@@ -192,7 +193,7 @@ JSValue *htmlValue = [jsFunctionValue callWithArguments:@[self.textView.text]];
 
 ### 保存
 
-其实保存，这里只是简单实现，保存到沙盒。实际业务需求，很可能一个发送按钮，上传到服务器，或者是分享到其他的App。这里简单介绍下保存到沙盒。下面上代码
+其实保存，这里只是简单实现，保存到沙盒。实际业务需求，很可能是一个发送按钮，上传到服务器，或者是分享到其他的App。这里简单介绍下保存到沙盒。下面上代码
 
 ```objective-c
 /**
@@ -235,7 +236,7 @@ DAMarkdownEditor[9717:192504] md成功保存，地址/Users/DarkAngel/Library/De
 
 ## 美化样式
 
-如果你拥有前端的一点点知识，你会立刻想到，少了一个好看的`css`样式。我们可以通过给`html`添加`css`，来使页面看起来更好看。
+如果你拥有一点点前端知识，你会立刻想到，少了一个好看的`css`样式。我们可以通过给`html`添加`css`，来使页面看起来更好看。
 
 下面我们在`- (NSString *)htmlString`方法中，给html添加css，这里我本地添加了一个`css`文件，直接读取并拼接到`head`标签中
 
@@ -275,6 +276,8 @@ DAMarkdownEditor[9717:192504] md成功保存，地址/Users/DarkAngel/Library/De
 
 # 总结
 
-上面我们用很少的代码，很少的时间完成了一个简单的`Markdown`编辑器，又一次证明了`JavaScriptCore`的强大，同时也证明了前端如此火热的今天，Native开发依然是王道。`Github`前十的开源项目中，有**六**款是基于`JavaScript`语言的。可能有些小伙伴作为一个Native端开发，会很方，很多小伙伴开始学习前端，学习js。当然，学习新的东西本就无可厚非。但我相信，被动学习的不在少数。
+上面我们用很少的代码，很少的时间完成了一个简单的`Markdown`编辑器，又一次证明了`JavaScriptCore`的强大，同时也证明了前端如此火热的今天，Native开发依然是王道。
+
+`Github`前十的开源项目中，有**六**款是基于`JavaScript`语言的。可能有些小伙伴作为一个Native端开发，会很方，很多小伙伴开始学习前端，学习js。当然，学习新的东西本就无可厚非。但我相信，被动学习的不在少数。
 
 那么，我们可不可以利用它，结合Native打造更好的App呢？答案是：一定可以。
